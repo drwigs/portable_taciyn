@@ -1,0 +1,36 @@
+{
+    "update_id": "1",
+
+    "src": {
+        "main": {
+            "auth": "false",
+            "id": 1,
+            "url": ""
+        },
+
+        "visual": {
+            "auth": "false",
+            "id": "",
+            "url": "https://raw.githubusercontent.com/drwigs/wigsGrammani/main/src/visuals.py"
+        },
+        
+        "appmanager": {
+            "auth": "false",
+            "id": "",
+            "url": ""
+        },
+        
+        "updates": {
+            "auth": "false",
+            "id": "",
+            "url": ""
+        }
+    },
+
+    "apps": {
+        "multiop": {
+            "auth": "false",
+            "url": ""
+        }
+    }
+}
