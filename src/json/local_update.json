@@ -1,0 +1,33 @@
+{
+    "update_id": "1",
+
+    "src": {
+        "main": {
+            "id": 1,
+            "url": ""
+        },
+
+        "visual": {
+            "id": "",
+            "url": "https://raw.githubusercontent.com/drwigs/wigsGrammani/main/src/visuals.py"
+        },
+        
+        "appmanager": {
+            "id": "",
+            "url": ""
+        },
+        
+        "updates": {
+            "id": "",
+            "url": ""
+        },
+
+        "menu": {
+            "id": "",
+            "url": ""
+        }
+    },
+
+    "apps": {
+    }
+}
