@@ -3,35 +3,29 @@
 
     "src": {
         "main": {
-            "auth": "false",
             "id": 1,
             "url": ""
         },
 
         "visual": {
-            "auth": "false",
             "id": 1,
             "url": "https://raw.githubusercontent.com/drwigs/wigsGrammani/main/src/visuals.py"
         },
         
         "appmanager": {
-            "auth": "false",
             "id": 1,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/appmanager.py"
         },
         
         "updates": {
-            "auth": "false",
             "id": 1,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/updates.py"
         },
         "menu": {
-            "auth": "false",
             "id": 2,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/menu.py"
         },
         "startapp": {
-            "auth": "false",
             "id": 1,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/startapp.py"
         }
