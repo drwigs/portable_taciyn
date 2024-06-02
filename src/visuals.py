@@ -1,4 +1,4 @@
-import json
+ json
 import os
 
 with open('src/json/local_update.json') as visual_json_update_data:
@@ -52,10 +52,9 @@ Aplicaciones instaladas:
 
 def update_apps_visuals():
     if visual_update_data["apps"] == {}:
-        p_apps_list = "No hay aplicaciones instaladas"
+        print("No hay aplicaciones instaladas")
 
     else:
+        print("Aplicaciones instaladas:")
         for i in visual_update_data["apps"].keys():
-            p_apps_list += "-"+i
-
-    print(p_apps_list)
+            print("-"+i)
