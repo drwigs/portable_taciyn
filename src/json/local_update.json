@@ -4,7 +4,7 @@
     "src": {
         "main": {
             "id": 1,
-            "url": ""
+            "url": "https://raw.githubusercontent.com/drwigs/portable_taciyn/main/main.py"
         },
 
         "visual": {
