@@ -17,18 +17,23 @@
         "appmanager": {
             "auth": "false",
             "id": 1,
-            "url": ""
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/appmanager.py"
         },
         
         "updates": {
             "auth": "false",
             "id": 1,
-            "url": ""
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/updates.py"
         },
         "menu": {
             "auth": "false",
             "id": 2,
-            "url": "https://raw.githubusercontent.com/drwigs/portable_taciyn/main/src/menu.py"
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/menu.py"
+        },
+        "startapp": {
+            "auth": "false",
+            "id": 1,
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/startapp.py"
         }
     },
 
