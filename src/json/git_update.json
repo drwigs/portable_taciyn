@@ -34,7 +34,7 @@
 
     "apps": {
         "multiop": {
-            "id": 1,
+            "id": 2,
             "auth": "false",
             "url": "https://raw.githubusercontent.com/drwigs/portable_taciyn/main/apps/multiop.py"
         }
