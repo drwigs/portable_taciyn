@@ -1,4 +1,5 @@
 import os
+import json
 
 with open('src/json/local_update.json') as visual_json_update_data:
     visual_update_data = json.load(visual_json_update_data)
