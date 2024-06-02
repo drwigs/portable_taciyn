@@ -11,7 +11,7 @@
         "visuals": {
             "auth": "false",
             "id": 1,
-            "url": "https://raw.githubusercontent.com/drwigs/wigsGrammani/main/src/visuals.py"
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/visuals.py"
         },
         
         "appmanager": {
