@@ -1,30 +1,39 @@
 {
-    "update_id": "1",
+    "update_id": 1,
 
     "src": {
         "main": {
+            "auth": "false",
             "id": 1,
             "url": ""
         },
 
         "visual": {
-            "id": "",
+            "auth": "false",
+            "id": 1,
             "url": "https://raw.githubusercontent.com/drwigs/wigsGrammani/main/src/visuals.py"
         },
         
         "appmanager": {
-            "id": "",
-            "url": ""
+            "auth": "false",
+            "id": 1,
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/appmanager.py"
         },
         
         "updates": {
-            "id": "",
-            "url": ""
+            "auth": "false",
+            "id": 1,
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/updates.py"
         },
-
         "menu": {
-            "id": "",
-            "url": ""
+            "auth": "false",
+            "id": 2,
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/menu.py"
+        },
+        "startapp": {
+            "auth": "false",
+            "id": 1,
+            "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/startapp.py"
         }
     },
 
