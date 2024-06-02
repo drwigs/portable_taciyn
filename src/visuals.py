@@ -5,7 +5,7 @@ with open('src/json/local_update.json') as visual_json_update_data:
     visual_update_data = json.load(visual_json_update_data)
 
 p_title = """
-TACIYN """+visual_update_data["update_id"]+"""
+TACIYN """+str(visual_update_data["update_id"])+"""
 PORTABLE =)
 """
 
