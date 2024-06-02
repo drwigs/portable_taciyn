@@ -1,4 +1,3 @@
- json
 import os
 
 with open('src/json/local_update.json') as visual_json_update_data:
