@@ -111,78 +111,35 @@ se encuentran, en caso de que no
 los descargará desde github/wigsGrammani
 """
 
+for i in update_data['src']:
+    if i != 'main':
+        exec(
+            """
 try:
-    from src.visuals import *
+    from src."""+i+""" import *
 
 except ModuleNotFoundError:
     if main_configuration['use_internet'] != True:
         exit()
 
-    file_src = requests.get(update_data['src']['visual']['url'])
+    file_src = requests.get(update_data['src']['"""+i+"""']['url'])
 
-    with open(('src/visuals.py'),'wb') as file_src_download:
+    with open(('src/"""+i+""".py'),'wb') as file_src_download:
         for chunk in file_src.iter_content(chunk_size=8192):
             file_src_download.write(chunk)
-    from src.visuals import *
 
-
-try:
-    from src.appmanager import *
-
-except ModuleNotFoundError:
-    if main_configuration['use_internet'] != True:
+    if main_configuration["use_internet"] != True:
+        print("Imposible instalar los archivos requeridos.")
+        sleep(1)
         exit()
-    file_src = requests.get(update_data['src']['appmanager']['url'])
+        """
+        )
 
-    with open(('src/appmanager.py'),'wb') as file_src_download:
-        for chunk in file_src.iter_content(chunk_size=8192):
-            file_src_download.write(chunk)
-
-    from src.appmanager import *
-
-
-try:
-    from src.updates import *
-
-except ModuleNotFoundError:
-    if main_configuration['use_internet'] != True:
-        exit()
-
-    file_src = requests.get(update_data['src']['updates']['url'])
-
-    with open(('src/updates.py'),'wb') as file_src_download:
-        for chunk in file_src.iter_content(chunk_size=8192):
-            file_src_download.write(chunk)
-    
-    from src.updates import *
-
-
-try:
-    from src.menu import *
-
-except ModuleNotFoundError:
-    if main_configuration['use_internet'] != True:
-        exit()
-
-    file_src = requests.get(update_data['src']['menu']['url'])
-
-    with open(('src/menu.py'),'wb') as file_src_download:
-        for chunk in file_src.iter_content(chunk_size=8192):
-            file_src_download.write(chunk)
-
-
-try:
-    from src.startapp import *
-
-except ModuleNotFoundError:
-    if main_configuration['use_internet'] != True:
-        exit()
-
-    file_src = requests.get(update_data['src']['startapp']['url'])
-
-    with open(('src/startapp.py'),'wb') as file_src_download:
-        for chunk in file_src.iter_content(chunk_size=8192):
-            file_src_download.write(chunk)
+from src.visuals import *
+from src.appmanager import *
+from src.updates import *
+from src.menu import *
+from src.startapp import *
 
 """
 Se verificará si hay actualizaciones
@@ -190,7 +147,6 @@ en los archivos src
 """
 
 manage_updates('src', GIT_UPDATE_CONFIGURATION, main_configuration['auto_updates'])
-
 
 print(p_title)
 
