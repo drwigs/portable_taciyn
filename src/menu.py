@@ -22,13 +22,25 @@ def menu(enable_internet):
         menu = input("menu>")
 
         if menu == 'help':
-            update_apps_visuals()
+            print(p_menu_help)
             input()
 
         elif menu == 'apps':
-            print(p_apps_list)
+            update_apps_visuals()
+            print("----------\n"+"Escribe x Para rechazar")
             select_app = input("Nombre del programa a abrir: ")
-            run_app(select_app)
+            if select_app != 'x':
+                inst_open_app = input("Abrir programa ahora? (y/n): ")
+                while True:
+                    if inst_open_app == 'y':
+                        run_app(select_app)
+
+                    elif inst_open_app == 'n':
+                        break
+
+                    else:
+                        print("Respuesta no válida")
+
             input()
 
         elif menu == 'appmanager':
@@ -47,3 +59,4 @@ def menu(enable_internet):
 
                 elif appmanager_menu == '3':
                     break
+
