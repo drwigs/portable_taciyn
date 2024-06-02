@@ -35,7 +35,7 @@ def manage_updates(update_type, update_url, auto_update):
             if len(update_modules) > 0:
                 print("¡Se ha encontrado una actualización en uno de los módulos!")
                 if auto_update == True:
-                    setup_update(update_type, requests.get(git_update[update_type][i]["url"]).text)
+                    setup_update(update_type, requests.get(git_update[update_type][i]["url"]).text, git_update)
 
                 else:
                     while True:
