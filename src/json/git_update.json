@@ -24,6 +24,11 @@
             "auth": "false",
             "id": 1,
             "url": ""
+        },
+        "menu": {
+            "auth": "false",
+            "id": 2,
+            "url": "https://raw.githubusercontent.com/drwigs/portable_taciyn/main/src/menu.py"
         }
     },
 
