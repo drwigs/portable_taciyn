@@ -5,6 +5,7 @@ import platform
 import json
 
 alph = {
+    '0': 0,
     'a': 1,
     'b': 2,
     'c': 3,
@@ -53,7 +54,11 @@ alph = {
     '8': -19,
     '9': -20,
     '=': -21,
-    '_': -22
+    '_': -22,
+    '/': -23,
+    ':': -24,
+    '&': -25,
+    '%': -26
 }
 
 chars = []
@@ -102,7 +107,7 @@ def crypt():
     else:
         os.system("cls")
 
-    print(char_result)
+    input(char_result)
 
 dec_chars = []
 
@@ -142,7 +147,7 @@ def decrypt(to_decrypt):
     else:
         os.system("cls")
 
-    print(''.join(str(b) for b in decrypt_chars))
+    input(''.join(str(b) for b in decrypt_chars))
 
 select = input("1.- Encriptar; 2.- Desencriptar; >")
 if select == '1':
@@ -153,5 +158,5 @@ elif select == '2':
     decrypt(str(char_to))
 
 else:
-    print("Comando no admitido.")
+    input("Comando no admitido.")
 
