@@ -60,3 +60,6 @@ def menu(enable_internet):
                 elif appmanager_menu == '3':
                     break
 
+        elif menu == 'exit':
+            exit()
+
