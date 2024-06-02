@@ -10,7 +10,6 @@ git_update = None
 def setup_update(setup_update_type, setup_update_url, git_json, file_name):
     os.remove(setup_update_type+'/'+file_name+'.py')
     with open((setup_update_type+'/'+file_name+'.py'),'wb') as file_app_download:
-        print(file_app_download)
         for chunk in requests.get(setup_update_url).iter_content(chunk_size=8192):
             file_app_download.write(chunk)
         
