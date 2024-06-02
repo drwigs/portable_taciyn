@@ -149,14 +149,29 @@ def decrypt(to_decrypt):
 
     input(''.join(str(b) for b in decrypt_chars))
 
-select = input("1.- Encriptar; 2.- Desencriptar; >")
-if select == '1':
-    crypt()
+while True:
+    chars = []
+    result = []
+    char_result = str()
+    op_a = int()
+    op_b = int()
+    op_c = int()
 
-elif select == '2':
-    char_to = input(">")
-    decrypt(str(char_to))
+    dec_chars = []
+    to_decrypt_chars = []
+    decrypt_chars = []
 
-else:
-    input("Comando no admitido.")
+    select = input("1.- Encriptar; 2.- Desencriptar; 3.- Salir>")
+    if select == '1':
+        crypt()
+
+    elif select == '2':
+        char_to = input(">")
+        decrypt(str(char_to))
+
+    elif select == '3':
+        break
+
+    else:
+        input("Comando no admitido.")
 
