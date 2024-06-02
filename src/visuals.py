@@ -32,6 +32,8 @@ aplicaciones instaladas.
 
 -appmanager: Abre el administrador
 de aplicaciones.
+
+-exit: Salir del programa.
 """
 
 p_appmanager = """
