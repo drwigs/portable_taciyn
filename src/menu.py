@@ -1,4 +1,5 @@
 import platform
+import os
 import sys
 from .visuals import *
 from .appmanager import manage_apps, delete_apps
