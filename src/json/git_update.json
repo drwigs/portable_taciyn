@@ -16,7 +16,7 @@
         
         "appmanager": {
             "auth": "false",
-            "id": 1,
+            "id": 2,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/appmanager.py"
         },
         
@@ -27,7 +27,7 @@
         },
         "menu": {
             "auth": "false",
-            "id": 3,
+            "id": 4,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/menu.py"
         },
         "startapp": {
