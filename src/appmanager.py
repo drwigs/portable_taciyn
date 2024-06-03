@@ -36,6 +36,8 @@ def manage_apps(update_url):
             for chunk in url_app_download.iter_content(chunk_size=8192):
                 file_app_download.write(chunk)
 
+        print("Programa instalado con éxito.")
+
         json_local_data['apps'].update({
             app_download: {
                 'id': git_update["apps"][app_download]["id"],
