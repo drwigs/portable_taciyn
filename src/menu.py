@@ -30,8 +30,8 @@ def menu(enable_internet):
             print("----------\n"+"Escribe x Para rechazar")
             select_app = input("Nombre del programa a abrir: ")
             if select_app != 'x':
-                inst_open_app = input("Abrir programa ahora? (y/n): ")
                 while True:
+                    inst_open_app = input("Abrir programa ahora? (y/n): ")
                     if inst_open_app == 'y':
                         run_app(select_app)
 
