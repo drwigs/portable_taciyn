@@ -1,9 +1,18 @@
 import platform
 import os
 import sys
+
+# Estilo
+from rich.console import Console # type: ignore
+from rich.text import Text # type: ignore
+from colorama import Fore, Back, Style
+
+# Archivos locales
 from .visuals import *
 from .appmanager import manage_apps, delete_apps
 from .startapp import run_app
+
+console = Console()
 
 
 def sys_clear():
@@ -13,11 +22,11 @@ def sys_clear():
     else:
         os.system("cls")
 
-    print(p_title)
-
 def menu(enable_internet):
     while True:
         sys_clear()
+        console.print(p_title, justify="center")
+
 
         menu = input("menu>")
 
@@ -65,6 +74,7 @@ def menu(enable_internet):
 
         elif menu == 'exit':
             exit()
+
 
 
 
