@@ -1,8 +1,14 @@
 import os
 import json
+from pysine import sine
 
 with open('src/json/local_update.json') as visual_json_update_data:
     visual_update_data = json.load(visual_json_update_data)
+
+def intro_tune():
+    sine(frequency=349, duration=0.3)
+    sine(frequency=391, duration=0.3)
+    sine(frequency=587, duration=0.5)
 
 p_title = """
 ------------------------
@@ -36,9 +42,6 @@ aplicaciones instaladas.
 -appmanager: Abre el administrador
 de aplicaciones.
 
--configuration: Abre la
-configuración del programa.
-
 -exit: Salir del programa.
 """
 
@@ -58,6 +61,10 @@ p_appmanager_menu = """
 p_apps_list = """
 Aplicaciones instaladas:
 
+"""
+
+p_configuration_list = """
+[1]: 
 """
 
 def update_apps_visuals():
