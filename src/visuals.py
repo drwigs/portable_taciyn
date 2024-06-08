@@ -33,6 +33,9 @@ aplicaciones instaladas.
 -appmanager: Abre el administrador
 de aplicaciones.
 
+-configuration: Abre la
+configuración del programa.
+
 -exit: Salir del programa.
 """
 
@@ -42,6 +45,8 @@ Administrador de aplicaciones:
 2- Instalar aplicación de la red
 3- Salir
 >"""
+
+p_press_enter = "Presiona ENTER para continuar..."
 
 p_appmanager_menu = """
 1- 
@@ -60,3 +65,4 @@ def update_apps_visuals():
         print("Aplicaciones instaladas:")
         for i in visual_update_data["apps"].keys():
             print("-"+i)
+
