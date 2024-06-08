@@ -23,6 +23,14 @@ def setup_update(setup_update_type, setup_update_url, git_json, file_name):
 
 
 def manage_updates(update_type, update_url, auto_update):
+    os.chdir("C:\\"+"Users/"+os.getlogin()+"/Documents")
+
+    with open('taciyn-reg/configuration.json', 'r') as configuration_json_file:
+        configuration_json_data = json.load(configuration_json_file)
+
+    if configuration_json_data["working_dir"] != "":
+        os.chdir(configuration_json_data["working_dir"])
+        
     with open('src/json/local_update.json', 'r') as json_local_file:
         json_local_data = json.load(json_local_file)
 
