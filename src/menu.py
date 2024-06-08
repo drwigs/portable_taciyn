@@ -23,7 +23,7 @@ def menu(enable_internet):
 
         if menu == 'help':
             print(p_menu_help)
-            input()
+            input(p_press_enter)
 
         elif menu == 'apps':
             update_apps_visuals()
@@ -41,7 +41,7 @@ def menu(enable_internet):
                     else:
                         print("Respuesta no válida")
 
-            input()
+            input(p_press_enter)
 
         elif menu == 'appmanager':
             while True:
@@ -60,6 +60,11 @@ def menu(enable_internet):
                 elif appmanager_menu == '3':
                     break
 
+        elif menu == 'configuration':
+            pass
+
         elif menu == 'exit':
             exit()
+
+
 
