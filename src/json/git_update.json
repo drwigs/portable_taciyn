@@ -5,7 +5,7 @@
 
         "visuals": {
             "auth": "false",
-            "id": 5,
+            "id": 6,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/visuals.py"
         },
         
@@ -17,12 +17,12 @@
         
         "updates": {
             "auth": "false",
-            "id": 2,
+            "id": 3,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/updates.py"
         },
         "menu": {
             "auth": "false",
-            "id": 6,
+            "id": 7,
             "url": "https://github.com/drwigs/portable_taciyn/raw/main/src/menu.py"
         },
         "startapp": {
