@@ -62,3 +62,4 @@ def manage_updates(update_type, update_url, auto_update):
         print("Sin actualizaciones.")
         sleep(1)
 
+
