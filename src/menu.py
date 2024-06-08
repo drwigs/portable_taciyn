@@ -1,15 +1,15 @@
 import platform
 import os
+import json
 import sys
 
 # Estilo
 from rich.console import Console # type: ignore
 from rich.text import Text # type: ignore
-from colorama import Fore, Back, Style
 
 # Archivos locales
 from .visuals import *
-from .appmanager import manage_apps, delete_apps
+from .appmanager import manage_apps, delete_apps, update_apps
 from .startapp import run_app
 
 console = Console()
@@ -35,14 +35,15 @@ def menu(enable_internet):
             input(p_press_enter)
 
         elif menu == 'apps':
-            update_apps_visuals()
+            update_apps()
             print("----------\n"+"Escribe x Para rechazar")
             select_app = input("Nombre del programa a abrir: ")
             if select_app != 'x':
                 while True:
-                    inst_open_app = input("Abrir programa ahora? (y/n): ")
+                    inst_open_app = input("Abrir programa? (y/n): ")
                     if inst_open_app == 'y':
                         run_app(select_app)
+                        break
 
                     elif inst_open_app == 'n':
                         break
@@ -60,7 +61,7 @@ def menu(enable_internet):
                     delete_apps()
 
                 elif appmanager_menu == '2':
-                    if enable_internet["use_internet"] != True:
+                    if enable_internet["use_internet"] != "true":
                         print(e_no_internet)
                     
                     else:
@@ -68,9 +69,6 @@ def menu(enable_internet):
 
                 elif appmanager_menu == '3':
                     break
-
-        elif menu == 'configuration':
-            pass
 
         elif menu == 'exit':
             exit()
