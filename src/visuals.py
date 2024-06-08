@@ -5,8 +5,11 @@ with open('src/json/local_update.json') as visual_json_update_data:
     visual_update_data = json.load(visual_json_update_data)
 
 p_title = """
-TACIYN """+str(visual_update_data["update_id"])+"""
-PORTABLE =)
+------------------------
+|        TACIYN        |
+|       PORTABLE       |
+|     By: dr_wigs      |
+------------------------
 """
 
 e_no_internet = """
@@ -65,4 +68,6 @@ def update_apps_visuals():
         print("Aplicaciones instaladas:")
         for i in visual_update_data["apps"].keys():
             print("-"+i)
+
+
 
