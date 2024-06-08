@@ -2,11 +2,6 @@
     "update_id": 1,
 
     "src": {
-        "main": {
-            "auth": "false",
-            "id": 2,
-            "url": "https://raw.githubusercontent.com/drwigs/portable_taciyn/main/main.py"
-        },
 
         "visuals": {
             "auth": "false",
