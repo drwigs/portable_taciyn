@@ -25,7 +25,7 @@ alph = {
     'p': 17,
     'q': 18,
     'r': 19,
-    's': 29,
+    's': 20,
     't': 21,
     'u': 22,
     'v': 23,
@@ -61,18 +61,17 @@ alph = {
     '%': -26
 }
 
-chars = []
-
-result = []
-
-char_result = str()
-    
-
-op_a = int()
-op_b = int()
-op_c = int()
-
 def crypt():
+    chars = []
+
+    result = []
+
+    char_result = str()
+        
+
+    op_a = int()
+    op_b = int()
+    op_c = int()
     to_crypt = input(">")
     to_crypt = to_crypt.lower()
 
@@ -109,13 +108,12 @@ def crypt():
 
     input(char_result)
 
-dec_chars = []
-
-to_decrypt_chars = []
-
-decrypt_chars = []
-
 def decrypt(to_decrypt):
+    dec_chars = []
+
+    to_decrypt_chars = []
+
+    decrypt_chars = []
     temporal_decrypt_char = str()
     temporal_to_decrypt = []
     for m in to_decrypt:
@@ -149,17 +147,9 @@ def decrypt(to_decrypt):
 
     input(''.join(str(b) for b in decrypt_chars))
 
-while True:
-    chars = []
-    result = []
-    char_result = str()
-    op_a = int()
-    op_b = int()
-    op_c = int()
 
-    dec_chars = []
-    to_decrypt_chars = []
-    decrypt_chars = []
+
+while True:
 
     select = input("1.- Encriptar; 2.- Desencriptar; 3.- Salir>")
     if select == '1':
@@ -174,4 +164,5 @@ while True:
 
     else:
         input("Comando no admitido.")
+
 
